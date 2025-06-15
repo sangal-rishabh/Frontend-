@@ -20,7 +20,7 @@ const Login = ({ setLoginModel }) => {
     console.log("Sending login data:", loginField); // Debug log
     try {
       const response = await axios.post(
-        "https://backend-2-sqf1.onrender.com/auth/login",
+        "https://backend-3-858w.onrender.com/auth/login",
         loginField,
         { withCredentials: true }
       );
