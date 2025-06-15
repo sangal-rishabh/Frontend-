@@ -7,7 +7,7 @@ const HomePage = ({ sideNavbar }) => {
 
   useEffect(() => {
     axios
-      .get("https://backend-2-sqf1.onrender.com/api/allvideo")
+      .get("https://backend-3-858w.onrender.com/api/allvideo")
       .then((res) => {
         console.log(res.data.videos);
         setData(res.data.videos);
