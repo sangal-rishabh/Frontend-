@@ -1,0 +1,130 @@
+.VideoUplod {
+  padding-top: 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+
+.uplodbox {
+  width: 45%;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0.5px 0.5px 8px white;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.uploadvedio_title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.formUplod {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.Uplodforminput {
+  width: 70%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: white;
+  box-sizing: border-box;
+  background-color: #222222;
+  border: none;
+  border-radius: 5px;
+}
+
+.uplodbutton {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.uplod_buton_form {
+  padding: 10px;
+  border: 1px solid;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.uplod_buton_form:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ✅ Media Queries */
+
+/* Tablets (below 1024px) */
+@media screen and (max-width: 1024px) {
+  .uplodbox {
+    width: 60%;
+  }
+
+  .Uplodforminput {
+    width: 85%;
+  }
+}
+
+/* Small Tablets & Large Phones (below 768px) */
+@media screen and (max-width: 768px) {
+  .uplodbox {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .uploadvedio_title {
+    font-size: 24px;
+  }
+
+  .Uplodforminput {
+    width: 100%;
+  }
+
+  .uplod_buton_form {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+/* Mobile Phones (below 480px) */
+@media screen and (max-width: 480px) {
+  .uplodbox {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .uploadvedio_title {
+    font-size: 20px;
+  }
+
+  .uplodbutton {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .uplod_buton_form {
+    width: 100%;
+    text-align: center;
+  }
+}

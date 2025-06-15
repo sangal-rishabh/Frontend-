@@ -1,0 +1,132 @@
+/* Responsive and Sidebar-aware Profile Page Layout */
+
+.profile {
+  display: flex;
+  width: 100%;
+  padding: 10px 13px 0 13px;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/* Profile section when sidebar is visible */
+.profile_page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 1;
+  margin-left: 275px; /* Matches your sidebar width */
+  color: white;
+  margin-top: 56px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile section when sidebar is hidden */
+.profile_page_inactive {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  flex: 1;
+  color: white;
+  margin-top: 56px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+/* Responsive Fix */
+@media screen and (max-width: 768px) {
+  .profile_page {
+    margin-left: 0; /* Remove sidebar space on small screens */
+    padding: 0 10px;
+  }
+}
+
+.profile_top_section {
+  width: 100%;
+  display: flex;
+  padding: 0 0 20px 0;
+  flex-wrap: wrap;
+}
+
+.profile_top_section_profile {
+  width: 150px;
+  height: 150px;
+}
+
+.profile_image {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.profile_top_section_about {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0 10px;
+  width: 85%;
+}
+
+.profile_top_section_about_name {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.profile_top_section_info {
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+}
+
+.profile_video {
+  width: 100%;
+}
+
+.profile_video_title {
+  font-size: 22px;
+  padding-bottom: 10px;
+  color: rgb(207, 206, 206);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.profileVideo {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.profileVideo_block {
+  width: 210px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.profileVideo_block_thumbnail {
+  width: 100%;
+}
+
+.profilevideo_block_thumbnail_img {
+  width: 100%;
+}
+
+.proflile_detail_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile_video_detail_name {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile_video_detail_about {
+  color: #ababab;
+  font-size: 13px;
+}

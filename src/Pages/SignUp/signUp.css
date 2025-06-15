@@ -1,0 +1,155 @@
+.signup {
+    margin-top: 56px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.signup_card {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.5px 0.5px 8px white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.signup_title {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 28px;
+    font-family: "Oswald", sans-serif;
+}
+
+.signup_input {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.signup_input_input {
+    width: 100%;
+    height: 45px;
+    color: white;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222222;
+    font-size: 16px;
+}
+
+.image_uplod_signup {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image_sinup_image {
+    width: 100px;
+    height: 100px;
+}
+
+.image_default_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.signup_buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.signupbtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.signupbtn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ✅ Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .signup_card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .signup_title {
+        font-size: 24px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .signup_input_input {
+        font-size: 15px;
+    }
+
+    .signupbtn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .image_sinup_image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .signup_buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .signup_title {
+        font-size: 20px;
+    }
+
+    .signup_input_input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .signupbtn {
+        font-size: 15px;
+    }
+}
