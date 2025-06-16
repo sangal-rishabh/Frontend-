@@ -57,7 +57,7 @@ const Navbar = ({ setSideNavbarFunc, sideNavbar }) => {
   };
   const getLogoutFun = async () => {
     axios
-      .post("https://backend-2-sqf1.onrender.com/auth/logout", {}, { withCredentials: true })
+      .post("https://backend-service-1j0i.onrender.com/auth/logout", {}, { withCredentials: true })
       .then((response) => {
         console.log("Logout");
       })
