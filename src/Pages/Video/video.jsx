@@ -17,7 +17,7 @@ const Video = () => {
   const fetchVideobyid = async () => {
     try {
       const response = await axios.get(
-        `https://backend-2-sqf1.onrender.com/api/getVideoById/${id}`
+        `https://backend-service-1j0i.onrender.com/api/getVideoById/${id}`
       );
       setData(response.data.videos);
       setVideoUrl(response.data.videos?.videoLink);
@@ -29,7 +29,7 @@ const Video = () => {
   // Helper function to fetch user details by ID
   const fetchUserDetails = async (userId) => {
     try {
-      const res = await axios.get(`https://backend-2-sqf1.onrender.com/api/user/${userId}`);
+      const res = await axios.get(`https://backend-service-1j0i.onrender.com/api/user/${userId}`);
       return res.data.user; // Adjust based on your API response
     } catch (error) {
       console.error("Error fetching user details:", error);
@@ -40,7 +40,7 @@ const Video = () => {
   const getCommentbyid = async () => {
     try {
       const response = await axios.get(
-        `https://backend-2-sqf1.onrender.com/commentApi/comment/${id}`
+        `https://backend-service-1j0i.onrender.com/commentApi/comment/${id}`
       );
       const rawComments = response.data.comments;
 
@@ -74,7 +74,7 @@ const Video = () => {
       video: id,
     };
     await axios
-      .post("https://backend-2-sqf1.onrender.com/commentApi/comment", body, {
+      .post("https://backend-service-1j0i.onrender.com/commentApi/comment", body, {
         withCredentials: true,
       })
       .then(async (response) => {
