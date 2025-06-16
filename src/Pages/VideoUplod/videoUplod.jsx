@@ -60,7 +60,7 @@ const VideoUplod = () => {
   }, []);
 
   const handlesubmitFunction = async () => {
-    await axios.post("https://backend-2-sqf1.onrender.com/api/video", inputField, {
+    await axios.post("https://backend-service-1j0i.onrender.com/api/video", inputField, {
       withCredentials: true,
     })
       .then((response) => {
