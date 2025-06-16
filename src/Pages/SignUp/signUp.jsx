@@ -51,7 +51,7 @@ const SignUp = () => {
   const handleSignup = async () => {
     try {
       const response = await axios.post(
-        "https://backend-2-sqf1.onrender.com/auth/signup",
+        "https://backend-service-1j0i.onrender.com/auth/signup",
         signUpField
       );
       console.log(response.data);
