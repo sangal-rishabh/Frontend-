@@ -12,7 +12,7 @@ const Profile = ({ sideNavbar }) => {
   const [user, setUser] = useState(null);
   const fetchProfileData = async () => {
     axios
-      .get(`https://backend-2-sqf1.onrender.com/api/${id}/channel`)
+      .get(`https://backend-service-1j0i.onrender.com/api/${id}/channel`)
       .then((response) => {
         console.log(response.data.videos);
         setData(response.data.videos);
